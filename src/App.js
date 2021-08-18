@@ -3,14 +3,8 @@
 function App() {
   return (
     <div>
-      <header sx={{ color: 'primary' }}>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <h1 sx={{ fontFamily: 'heading' }}>Learn React</h1>
+      <p>React is awesome!</p>
     </div>
   );
 }
