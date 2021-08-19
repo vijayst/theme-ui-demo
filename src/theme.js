@@ -1,7 +1,7 @@
 const theme = {
   fonts: {
-    body: 'system-ui, sans-serif',
-    heading: 'Capriola',
+    body: 'Montserrat',
+    heading: 'Raleway',
   },
   colors: {
     text: '#000',

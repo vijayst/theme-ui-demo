@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <h1 sx={{ fontFamily: 'heading' }}>Learn React</h1>
-      <p>React is awesome!</p>
+      <p sx={{ fontFamily: 'body' }}>React is awesome!</p>
     </div>
   );
 }
