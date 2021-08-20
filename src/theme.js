@@ -14,7 +14,7 @@ const theme = {
     background: '#fff',
     primary: '#0552ba',
     secondary: '#ffdab9',
-
+    highlight: '#002366',
     white: '#fff',
     white70: 'rgba(255, 255, 255, 0.7)',
   },
