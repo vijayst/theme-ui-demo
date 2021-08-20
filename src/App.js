@@ -7,8 +7,7 @@ function App() {
         sx={{
           position: 'fixed',
           width: '100%',
-          backgroundColor: 'primary',
-          opacity: 0.7,
+          backgroundColor: 'navbar',
           height: 64,
           display: 'flex',
           justifyContent: 'space-between',

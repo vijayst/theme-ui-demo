@@ -17,6 +17,7 @@ const theme = {
     highlight: '#002366',
     white: '#fff',
     white70: 'rgba(255, 255, 255, 0.7)',
+    navbar: 'rgba(5, 82, 186, .7)',
   },
   styles: {
     root: {
