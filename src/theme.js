@@ -8,7 +8,7 @@ const theme = {
     body: 1.5,
     heading: 1.125,
   },
-  space: [0, 4, 8, 16, 32, 64, 96, 128, 224, 256, 512],
+  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   colors: {
     text: '#000',
     background: '#fff',
@@ -48,6 +48,7 @@ const theme = {
       color: 'text',
       lineHeight: 'body',
       fontFamily: 'body',
+      textAlign: 'left',
     },
     button: {
       backgroundColor: 'primary',
@@ -76,6 +77,7 @@ const theme = {
       padding: 3,
       borderRadius: 8,
       position: 'relative',
+      textAlign: 'left',
     },
   },
 };

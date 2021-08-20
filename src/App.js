@@ -86,13 +86,24 @@ function App() {
         </div>
         <div
           sx={{
-            pl: [5, 5, 5, 7, 9],
-            pr: [4, 4, 4, 6, 8],
+            pl: [5, 5, 5, 6, 7],
+            pr: [4, 4, 4, '96px', '224px'],
             py: 5,
             backgroundColor: 'secondary',
+            '@media screen and (max-width: 480px)': {
+              textAlign: 'center',
+            },
           }}
         >
-          <h2 sx={{ variant: 'styles.h2', px: 3 }}>Upcoming tours</h2>
+          <h2
+            sx={{
+              variant: 'styles.h2',
+              pl: 3,
+              pr: '48px',
+            }}
+          >
+            Upcoming tours
+          </h2>
           <div sx={{ display: 'flex', flexWrap: 'wrap' }}>
             {tours.map((t) => (
               <div
