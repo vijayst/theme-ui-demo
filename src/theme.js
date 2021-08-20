@@ -24,16 +24,29 @@ const theme = {
       margin: 0,
       boxSizing: 'border-box',
     },
-    h1: {
+    heading: {
       fontFamily: 'heading',
-      fontSize: 6,
-    },
-    h2: {
-      fontFamily: 'heading',
-      fontSize: 5,
       margin: 0,
       mb: 3,
       lineHeight: 'heading',
+    },
+    h1: {
+      fontSize: 6,
+      variant: 'styles.heading',
+    },
+    h2: {
+      fontSize: 5,
+      variant: 'styles.heading',
+    },
+    h3: {
+      fontSize: 4,
+      variant: 'styles.heading',
+    },
+    p: {
+      fontSize: 2,
+      color: 'text',
+      lineHeight: 'body',
+      fontFamily: 'body',
     },
     button: {
       backgroundColor: 'primary',
@@ -45,7 +58,6 @@ const theme = {
       cursor: 'pointer',
       fontSize: 2,
       borderRadius: 4,
-      boxShadow: '0px 2px 1px 1px rgba(0, 0, 0, .3)',
       transition: 'all 200ms',
       ':focus': {
         outline: '1px solid',
@@ -58,8 +70,8 @@ const theme = {
     card: {
       backgroundColor: 'white',
       flex: 1,
-      maxWidth: '25%',
-      height: '200px',
+      maxWidth: '33%',
+      height: '300px',
       mr: 4,
       padding: 3,
       borderRadius: 8,

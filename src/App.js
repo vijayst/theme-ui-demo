@@ -69,12 +69,65 @@ function App() {
             backgroundColor: 'secondary',
           }}
         >
-          <h2 sx={{ variant: 'styles.h2' }}>Upcoming tours</h2>
+          <h2 sx={{ variant: 'styles.h2', px: 3 }}>Upcoming tours</h2>
           <div sx={{ display: 'flex' }}>
-            <div sx={{ variant: 'styles.card' }}>Tour 1</div>
-            <div sx={{ variant: 'styles.card' }}>Tour 2</div>
-            <div sx={{ variant: 'styles.card' }}>Tour 3</div>
-            <div sx={{ variant: 'styles.card' }}>Tour 4</div>
+            <div sx={{ variant: 'styles.card', position: 'relative' }}>
+              <h3 sx={{ variant: 'styles.h3' }}>Tour 1</h3>
+              <p sx={{ variant: 'styles.p' }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci
+                dapibus ultrices in iaculis nunc.
+              </p>
+              <button
+                sx={{
+                  variant: 'styles.button',
+                  py: 2,
+                  position: 'absolute',
+                  bottom: 16,
+                  right: 16,
+                }}
+              >
+                Join us
+              </button>
+            </div>
+            <div sx={{ variant: 'styles.card', position: 'relative' }}>
+              <h3 sx={{ variant: 'styles.h3' }}>Tour 2</h3>
+              <p sx={{ variant: 'styles.p' }}>
+                Eu mi bibendum neque egestas congue quisque. Aenean vel elit
+                scelerisque mauris pellentesque. Sodales ut etiam sit amet nisl.
+                At quis risus sed vulputate.
+              </p>
+              <button
+                sx={{
+                  variant: 'styles.button',
+                  py: 2,
+                  position: 'absolute',
+                  bottom: 16,
+                  right: 16,
+                }}
+              >
+                Join us
+              </button>
+            </div>
+            <div sx={{ variant: 'styles.card', position: 'relative' }}>
+              <h3 sx={{ variant: 'styles.h3' }}>Tour 3</h3>
+              <p sx={{ variant: 'styles.p' }}>
+                Nec ullamcorper sit amet risus nullam eget. Gravida quis blandit
+                turpis cursus in hac habitasse platea dictumst. Elementum nisi
+                quis eleifend quam. Odio ut sem nulla pharetra diam sit amet.
+              </p>
+              <button
+                sx={{
+                  variant: 'styles.button',
+                  py: 2,
+                  position: 'absolute',
+                  bottom: 16,
+                  right: 16,
+                }}
+              >
+                Join us
+              </button>
+            </div>
           </div>
         </div>
       </main>
