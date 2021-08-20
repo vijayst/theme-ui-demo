@@ -5,7 +5,7 @@ function App() {
     <div>
       <header
         sx={{
-          backgroundColor: 'highlight',
+          backgroundColor: 'primary',
           height: 64,
           display: 'flex',
           justifyContent: 'space-between',
@@ -16,7 +16,7 @@ function App() {
           sx={{
             fontFamily: 'heading',
             fontSize: 3,
-            color: 'accent',
+            color: 'white',
             pl: 4,
           }}
         >

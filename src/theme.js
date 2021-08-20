@@ -16,6 +16,8 @@ const theme = {
     secondary: '#fa8072',
     accent: '#ffdab9',
     highlight: '#002366',
+
+    white: '#fff',
   },
 };
 
