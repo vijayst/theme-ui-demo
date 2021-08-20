@@ -1,5 +1,8 @@
 /** @jsxImportSource theme-ui */
 
+import Brighten from './Brighten';
+import Darken from './Darken';
+
 const tours = [
   {
     title: 'Tour 1',
@@ -45,6 +48,9 @@ function App() {
           }}
         >
           Exotic Expeditions
+        </div>
+        <div sx={{ height: 24 }}>
+          <Darken />
         </div>
       </header>
       <main>
