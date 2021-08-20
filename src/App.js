@@ -33,6 +33,7 @@ function App() {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
+          zIndex: 1,
         }}
       >
         <div
@@ -85,8 +86,8 @@ function App() {
         </div>
         <div
           sx={{
-            pl: [5, 5, 7, 9],
-            pr: [4, 4, 6, 8],
+            pl: [5, 5, 5, 7, 9],
+            pr: [4, 4, 4, 6, 8],
             py: 5,
             backgroundColor: 'secondary',
           }}
@@ -100,6 +101,7 @@ function App() {
                   variant: 'styles.card',
                   position: 'relative',
                   width: [
+                    'calc(100% - 32px)',
                     'calc(50% - 32px)',
                     'calc(33.33% - 32px)',
                     'calc(33.33% - 32px)',

@@ -19,7 +19,7 @@ const theme = {
     white70: 'rgba(255, 255, 255, 0.7)',
     navbar: 'rgba(5, 82, 186, .7)',
   },
-  breakpoints: ['1000px', '1200px', '1440px'],
+  breakpoints: ['700px', '1000px', '1200px', '1440px'],
   styles: {
     root: {
       margin: 0,
