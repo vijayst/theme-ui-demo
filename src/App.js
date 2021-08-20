@@ -23,6 +23,16 @@ function App() {
           Exotic Expeditions
         </div>
       </header>
+      <main>
+        <div
+          sx={{
+            backgroundImage: 'url("/travel-light.jpg")',
+            width: '100vw',
+            height: '70vh',
+            filter: 'blur(2px)',
+          }}
+        ></div>
+      </main>
     </div>
   );
 }
