@@ -25,6 +25,10 @@ const theme = {
       margin: 0,
       boxSizing: 'border-box',
     },
+    h1: {
+      fontFamily: 'heading',
+      fontSize: 6,
+    },
     button: {
       backgroundColor: 'primary',
       color: 'white70',

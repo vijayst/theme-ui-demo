@@ -44,7 +44,12 @@ function App() {
               height: '100%',
             }}
           ></div>
-          <button sx={{ variant: 'styles.button' }}>Join us</button>
+          <div sx={{ textAlign: 'center' }}>
+            <h1 sx={{ variant: 'styles.h1', color: 'accent' }}>
+              Be one with nature
+            </h1>
+            <button sx={{ variant: 'styles.button' }}>Join us</button>
+          </div>
         </div>
       </main>
     </div>
