@@ -13,9 +13,7 @@ const theme = {
     text: '#000',
     background: '#fff',
     primary: '#0552ba',
-    secondary: '#fa8072',
-    accent: '#ffdab9',
-    highlight: '#002366',
+    secondary: '#ffdab9',
 
     white: '#fff',
     white70: 'rgba(255, 255, 255, 0.7)',
@@ -28,6 +26,13 @@ const theme = {
     h1: {
       fontFamily: 'heading',
       fontSize: 6,
+    },
+    h2: {
+      fontFamily: 'heading',
+      fontSize: 5,
+      margin: 0,
+      mb: 3,
+      lineHeight: 'heading',
     },
     button: {
       backgroundColor: 'primary',
@@ -48,6 +53,15 @@ const theme = {
         color: 'white',
         backgroundColor: 'highlight',
       },
+    },
+    card: {
+      backgroundColor: 'white',
+      flex: 1,
+      maxWidth: '25%',
+      height: '200px',
+      mr: 4,
+      padding: 3,
+      borderRadius: 8,
     },
   },
 };
