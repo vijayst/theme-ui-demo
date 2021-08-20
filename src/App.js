@@ -83,8 +83,11 @@ function App() {
             sx={{
               position: 'absolute',
               zIndex: -1,
-              backgroundImage: 'url("/travel-light.jpg")',
-              filter: 'blur(2px)',
+              backgroundImage: 'url("/travel.jpg")',
+              filter:
+                colorMode === 'default'
+                  ? 'blur(2px)'
+                  : 'blur(2px) grayscale(100%)',
               width: '100%',
               height: '100%',
             }}
