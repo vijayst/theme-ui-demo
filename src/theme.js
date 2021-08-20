@@ -18,18 +18,34 @@ const theme = {
     white: '#fff',
     white70: 'rgba(255, 255, 255, 0.7)',
     navbar: 'rgba(5, 82, 186, .7)',
+    imageOverlay: 'rgba(5, 82, 186, .2)',
+    hero: '#ffdab9',
+    modes: {
+      dark: {
+        text: '#fff',
+        background: '#000',
+        primary: '#262629',
+        secondary: '#333',
+        highlight: '#1d1d1f',
+        white: '#fff',
+        white70: 'rgba(255, 255, 255, 0.7)',
+        navbar: 'rgba(38, 38, 41, .7)',
+        imageOverlay: 'rgba(0, 0, 0, .5)',
+        hero: '#f2f2f2',
+      },
+    },
   },
   breakpoints: ['700px', '1000px', '1200px', '1440px'],
   styles: {
     root: {
       margin: 0,
-      boxSizing: 'border-box',
     },
     heading: {
       fontFamily: 'heading',
       margin: 0,
       mb: 3,
       lineHeight: 'heading',
+      color: 'text',
     },
     h1: {
       fontSize: 6,
@@ -70,7 +86,7 @@ const theme = {
       },
     },
     card: {
-      backgroundColor: 'white',
+      backgroundColor: 'background',
       height: '300px',
       mr: 4,
       mb: 4,

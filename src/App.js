@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
-
+import { Global } from '@emotion/react';
+import { useColorMode } from 'theme-ui';
 import Brighten from './Brighten';
 import Darken from './Darken';
 
@@ -25,8 +26,22 @@ const tours = [
 ];
 
 function App() {
+  const [colorMode, setColorMode] = useColorMode();
+
+  function handleModeChange() {
+    setColorMode(colorMode === 'default' ? 'dark' : 'default');
+  }
+
   return (
     <div>
+      <Global
+        styles={() => ({
+          '*': {
+            boxSizing: 'border-box',
+            transition: 'all 200ms',
+          },
+        })}
+      />
       <header
         sx={{
           position: 'fixed',
@@ -49,8 +64,8 @@ function App() {
         >
           Exotic Expeditions
         </div>
-        <div sx={{ height: 24 }}>
-          <Darken />
+        <div sx={{ height: 24 }} onClick={handleModeChange}>
+          {colorMode === 'default' ? <Darken /> : <Brighten />}
         </div>
       </header>
       <main>
@@ -78,13 +93,13 @@ function App() {
             sx={{
               position: 'absolute',
               zIndex: -1,
-              backgroundColor: 'rgba(5, 82, 186, .2)',
+              backgroundColor: 'imageOverlay',
               width: '100%',
               height: '100%',
             }}
           ></div>
           <div sx={{ textAlign: 'center' }}>
-            <h1 sx={{ variant: 'styles.h1', color: 'secondary' }}>
+            <h1 sx={{ variant: 'styles.h1', color: 'hero' }}>
               Be one with nature
             </h1>
             <button sx={{ variant: 'styles.button' }}>Join us</button>
