@@ -18,6 +18,33 @@ const theme = {
     highlight: '#002366',
 
     white: '#fff',
+    white70: 'rgba(255, 255, 255, 0.7)',
+  },
+  styles: {
+    root: {
+      margin: 0,
+      boxSizing: 'border-box',
+    },
+    button: {
+      backgroundColor: 'primary',
+      color: 'white70',
+      px: 4,
+      py: 3,
+      border: 'none',
+      outline: 'none',
+      cursor: 'pointer',
+      fontSize: 2,
+      borderRadius: 4,
+      boxShadow: '0px 2px 1px 1px rgba(0, 0, 0, .3)',
+      transition: 'all 200ms',
+      ':focus': {
+        outline: '1px solid',
+      },
+      ':hover': {
+        color: 'white',
+        backgroundColor: 'highlight',
+      },
+    },
   },
 };
 

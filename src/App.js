@@ -44,7 +44,7 @@ function App() {
               height: '100%',
             }}
           ></div>
-          <button sx={{}}>Join us</button>
+          <button sx={{ variant: 'styles.button' }}>Join us</button>
         </div>
       </main>
     </div>
