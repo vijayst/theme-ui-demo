@@ -1,5 +1,26 @@
 /** @jsxImportSource theme-ui */
 
+const tours = [
+  {
+    title: 'Tour 1',
+    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci
+    dapibus ultrices in iaculis nunc.`,
+  },
+  {
+    title: 'Tour 2',
+    content: `Eu mi bibendum neque egestas congue quisque. Aenean vel elit
+    scelerisque mauris pellentesque. Sodales ut etiam sit amet nisl.
+    At quis risus sed vulputate.`,
+  },
+  {
+    title: 'Tour 3',
+    content: `Nec ullamcorper sit amet risus nullam eget. Gravida quis blandit
+    turpis cursus in hac habitasse platea dictumst. Elementum nisi
+    quis eleifend quam. Odio ut sem nulla pharetra diam sit amet.`,
+  },
+];
+
 function App() {
   return (
     <div>
@@ -64,70 +85,43 @@ function App() {
         </div>
         <div
           sx={{
-            px: 7,
+            pl: [5, 5, 7, 9],
+            pr: [4, 4, 6, 8],
             py: 5,
             backgroundColor: 'secondary',
           }}
         >
           <h2 sx={{ variant: 'styles.h2', px: 3 }}>Upcoming tours</h2>
-          <div sx={{ display: 'flex' }}>
-            <div sx={{ variant: 'styles.card', position: 'relative' }}>
-              <h3 sx={{ variant: 'styles.h3' }}>Tour 1</h3>
-              <p sx={{ variant: 'styles.p' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci
-                dapibus ultrices in iaculis nunc.
-              </p>
-              <button
+          <div sx={{ display: 'flex', flexWrap: 'wrap' }}>
+            {tours.map((t) => (
+              <div
+                key={t.title}
                 sx={{
-                  variant: 'styles.button',
-                  py: 2,
-                  position: 'absolute',
-                  bottom: 16,
-                  right: 16,
+                  variant: 'styles.card',
+                  position: 'relative',
+                  width: [
+                    'calc(50% - 32px)',
+                    'calc(33.33% - 32px)',
+                    'calc(33.33% - 32px)',
+                    'calc(33.33% - 32px)',
+                  ],
                 }}
               >
-                Join us
-              </button>
-            </div>
-            <div sx={{ variant: 'styles.card', position: 'relative' }}>
-              <h3 sx={{ variant: 'styles.h3' }}>Tour 2</h3>
-              <p sx={{ variant: 'styles.p' }}>
-                Eu mi bibendum neque egestas congue quisque. Aenean vel elit
-                scelerisque mauris pellentesque. Sodales ut etiam sit amet nisl.
-                At quis risus sed vulputate.
-              </p>
-              <button
-                sx={{
-                  variant: 'styles.button',
-                  py: 2,
-                  position: 'absolute',
-                  bottom: 16,
-                  right: 16,
-                }}
-              >
-                Join us
-              </button>
-            </div>
-            <div sx={{ variant: 'styles.card', position: 'relative' }}>
-              <h3 sx={{ variant: 'styles.h3' }}>Tour 3</h3>
-              <p sx={{ variant: 'styles.p' }}>
-                Nec ullamcorper sit amet risus nullam eget. Gravida quis blandit
-                turpis cursus in hac habitasse platea dictumst. Elementum nisi
-                quis eleifend quam. Odio ut sem nulla pharetra diam sit amet.
-              </p>
-              <button
-                sx={{
-                  variant: 'styles.button',
-                  py: 2,
-                  position: 'absolute',
-                  bottom: 16,
-                  right: 16,
-                }}
-              >
-                Join us
-              </button>
-            </div>
+                <h3 sx={{ variant: 'styles.h3' }}>{t.title}</h3>
+                <p sx={{ variant: 'styles.p' }}>{t.content}</p>
+                <button
+                  sx={{
+                    variant: 'styles.button',
+                    py: 2,
+                    position: 'absolute',
+                    bottom: 16,
+                    right: 16,
+                  }}
+                >
+                  Join us
+                </button>
+              </div>
+            ))}
           </div>
         </div>
       </main>

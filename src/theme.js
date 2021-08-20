@@ -8,7 +8,7 @@ const theme = {
     body: 1.5,
     heading: 1.125,
   },
-  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
+  space: [0, 4, 8, 16, 32, 64, 96, 128, 224, 256, 512],
   colors: {
     text: '#000',
     background: '#fff',
@@ -19,6 +19,7 @@ const theme = {
     white70: 'rgba(255, 255, 255, 0.7)',
     navbar: 'rgba(5, 82, 186, .7)',
   },
+  breakpoints: ['1000px', '1200px', '1440px'],
   styles: {
     root: {
       margin: 0,
@@ -69,12 +70,12 @@ const theme = {
     },
     card: {
       backgroundColor: 'white',
-      flex: 1,
-      maxWidth: '33%',
       height: '300px',
       mr: 4,
+      mb: 4,
       padding: 3,
       borderRadius: 8,
+      position: 'relative',
     },
   },
 };
