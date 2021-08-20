@@ -26,12 +26,26 @@ function App() {
       <main>
         <div
           sx={{
-            backgroundImage: 'url("/travel-light.jpg")',
             width: '100vw',
             height: '70vh',
-            filter: 'blur(2px)',
+            position: 'relative',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
-        ></div>
+        >
+          <div
+            sx={{
+              position: 'absolute',
+              zIndex: -1,
+              backgroundImage: 'url("/travel-light.jpg")',
+              filter: 'blur(2px)',
+              width: '100%',
+              height: '100%',
+            }}
+          ></div>
+          <button sx={{}}>Join us</button>
+        </div>
       </main>
     </div>
   );
